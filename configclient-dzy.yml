@@ -6,6 +6,10 @@ spring:
           destination: a-topic
         amsgoutput:
           destination: a-topic
+        amsgcallbackinput:
+          destination: acallback-topic
+        amsgcallbackoutput:
+          destination: acallback-topic
   rabbitmq:
     host: 127.0.0.1
     port: 5672
