@@ -1,4 +1,16 @@
 spring:
+  cloud:
+    stream:
+      bindings:
+        amsginput:
+          destination: a-topic
+        amsgoutput:
+          destination: a-topic
+        amsgcallbackinput:
+          destination: acall-topic
+        amsgcallbackoutput:
+          destination: acall-topic
+spring:
   rabbitmq:
     host: 127.0.0.1
     port: 5672
